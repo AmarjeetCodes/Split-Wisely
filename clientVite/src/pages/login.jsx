@@ -32,7 +32,9 @@ function Login() {
   };
 
   return (
-    <div className="fixed top-0 left-0 min-h-screen w-screen bg-neutral-800 flex items-center justify-center">
+    // <div className="fixed top-0 left-0 min-h-screen w-screen bg-neutral-800 flex items-center justify-center">
+      <div className="fixed top-0 left-0 min-h-screen w-screen bg-neutral-800 flex items-start justify-center pt-4 md:items-center md:pt-0">
+
 
       {/* Phone Wrapper */}
       <div className="rounded-2xl bg-blue-600 w-[370px] h-[720px] p-6 shadow-xl flex flex-col items-center text-white">
