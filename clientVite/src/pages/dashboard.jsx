@@ -47,7 +47,7 @@ const res = await axios.get(fullUrl, {
   );
 
   return (
-    <div className="fixed top-0 left-0 min-h-screen w-screen bg-neutral-800 flex items-center justify-center">
+     <div className="fixed top-0 left-0 min-h-screen w-screen bg-neutral-800 flex items-start justify-center pt-4 md:items-center md:pt-0">
      <div className="rounded-2xl bg-white w-[370px] h-[715px] shadow-xl flex flex-col justify-between overflow-hidden">
 
 
