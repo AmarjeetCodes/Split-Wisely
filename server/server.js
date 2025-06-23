@@ -20,6 +20,10 @@ const allowedOrigins = [
 
 app.use(cors({
   origin: function (origin, callback) {
+    const allowedOrigins = [
+      "http://localhost:5173",
+      "https://split-wisely-frontend.onrender.com"
+    ];
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
@@ -27,7 +31,10 @@ app.use(cors({
     }
   },
   credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
+
 
 app.use(express.json());
 
